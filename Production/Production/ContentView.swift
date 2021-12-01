@@ -8,13 +8,24 @@
 import SwiftUI
 import API
 import Home
+import Profile
+import Setting
 
 struct ContentView: View {
+    let apiKit = APIKit.Session.shared
+    let profile = Profile()
+    let setting = Setting()
     var body: some View {
         Text("Hello, world!")
             .padding()
+        profile.icon
+            .resizable()
+            .frame(width: 130, height: 100, alignment: .center)
+        setting.icon
+            .resizable()
+            .frame(width: 100, height: 100, alignment: .center)
+        
     }
-    let apiKit = APIKit.Session.shared
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -10,17 +10,17 @@ let package = Package(
         // Executable
         .executable(name: "Executable", targets: ["Executable"]),
         // AppCore
-        .library(name: "AppCore", type: .static, targets: ["API", "UserDefaults", "FeatureInterfaces"]),
+//        .library(name: "AppCore", type: .static, targets: ["API", "UserDefaults", "FeatureInterfaces"]),
         .library(name: "API", type: .static, targets: ["API"]),
         .library(name: "UserDefaults", type: .static, targets: ["UserDefaults"]),
         .library(name: "FeatureInterfaces", type: .static, targets: ["FeatureInterfaces"]),
         // Features
-        .library(name: "Features", type: .static, targets: ["Home", "Detail", "Profile", "Setting"]),
+//        .library(name: "Features", type: .static, targets: ["Home", "Detail", "Profile", "Setting"]),
         .library(name: "Home", type: .static, targets: ["Home"]),
         .library(name: "Detail", type: .static, targets: ["Detail"]),
         .library(name: "Profile", type: .static, targets: ["Profile"]),
-        .library(name: "Setting", type: .static, targets: ["Setting"]),
-        .library(name: "User", type: .static, targets: ["Profile", "Setting"]),
+        .library(name: "Setting", type: .dynamic, targets: ["Setting"]),
+//        .library(name: "User", type: .static, targets: ["Profile", "Setting"]),
         // FeatureProvider
         .library(name: "FeatureProvider", type: .static, targets: ["FeatureProvider"]),
     ],
@@ -42,7 +42,9 @@ let package = Package(
         .target(
             name: "FeatureProvider",
             dependencies: [
-                "API", "UserDefaults", "FeatureInterfaces", "Home", "Detail", "Profile", "Setting"
+                "API", "UserDefaults", "FeatureInterfaces", "Home", "Detail", "Profile"//, "Setting" コメントアウト外すとcompikeできんくなる symbol周りは重複するからおかしくなるのは大前提だけど、そもそものlinkのエラーが出るのと、libraryを作る時にtargetがstatic linkされるらしい
+                // error全文
+                // Swift package target 'Setting' is linked as a static library by 'Production' and 'Setting', but cannot be built dynamically because there is a package product with the same name.
             ]
         ),
     ]
