@@ -7,12 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD11FC99275784C50028FD8B /* Setting in Frameworks */ = {isa = PBXBuildFile; productRef = AD11FC98275784C50028FD8B /* Setting */; };
 		AD1C2A58274CEAD9004B3178 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = AD1C2A57274CEAD9004B3178 /* Home */; };
+		AD4453D2275777E2006FCDA6 /* API in Frameworks */ = {isa = PBXBuildFile; productRef = AD4453D1275777E2006FCDA6 /* API */; };
+		AD4453D4275777E2006FCDA6 /* Detail in Frameworks */ = {isa = PBXBuildFile; productRef = AD4453D3275777E2006FCDA6 /* Detail */; };
+		AD4453D6275777E2006FCDA6 /* FeatureInterfaces in Frameworks */ = {isa = PBXBuildFile; productRef = AD4453D5275777E2006FCDA6 /* FeatureInterfaces */; };
+		AD4453D8275777E2006FCDA6 /* FeatureProvider in Frameworks */ = {isa = PBXBuildFile; productRef = AD4453D7275777E2006FCDA6 /* FeatureProvider */; };
+		AD4453DA275777E2006FCDA6 /* UserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = AD4453D9275777E2006FCDA6 /* UserDefaults */; };
+		ADACDC3327575B9900213E37 /* Profile in Frameworks */ = {isa = PBXBuildFile; productRef = ADACDC3227575B9900213E37 /* Profile */; };
 		ADC3845B27471ACC00FDC974 /* ProductionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3845A27471ACC00FDC974 /* ProductionApp.swift */; };
 		ADC3845D27471ACC00FDC974 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3845C27471ACC00FDC974 /* ContentView.swift */; };
 		ADC3845F27471ACE00FDC974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC3845E27471ACE00FDC974 /* Assets.xcassets */; };
 		ADC3846227471ACE00FDC974 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC3846127471ACE00FDC974 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADACDC30275758CC00213E37 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AD1C2A5F274D08F9004B3178 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -28,7 +48,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4453D4275777E2006FCDA6 /* Detail in Frameworks */,
+				ADACDC3327575B9900213E37 /* Profile in Frameworks */,
+				AD4453D2275777E2006FCDA6 /* API in Frameworks */,
+				AD4453DA275777E2006FCDA6 /* UserDefaults in Frameworks */,
 				AD1C2A58274CEAD9004B3178 /* Home in Frameworks */,
+				AD11FC99275784C50028FD8B /* Setting in Frameworks */,
+				AD4453D8275777E2006FCDA6 /* FeatureProvider in Frameworks */,
+				AD4453D6275777E2006FCDA6 /* FeatureInterfaces in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +124,7 @@
 				ADC3845327471ACC00FDC974 /* Sources */,
 				ADC3845427471ACC00FDC974 /* Frameworks */,
 				ADC3845527471ACC00FDC974 /* Resources */,
+				ADACDC30275758CC00213E37 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -105,6 +133,13 @@
 			name = Production;
 			packageProductDependencies = (
 				AD1C2A57274CEAD9004B3178 /* Home */,
+				ADACDC3227575B9900213E37 /* Profile */,
+				AD4453D1275777E2006FCDA6 /* API */,
+				AD4453D3275777E2006FCDA6 /* Detail */,
+				AD4453D5275777E2006FCDA6 /* FeatureInterfaces */,
+				AD4453D7275777E2006FCDA6 /* FeatureProvider */,
+				AD4453D9275777E2006FCDA6 /* UserDefaults */,
+				AD11FC98275784C50028FD8B /* Setting */,
 			);
 			productName = Production;
 			productReference = ADC3845727471ACC00FDC974 /* Production.app */;
@@ -366,9 +401,37 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AD11FC98275784C50028FD8B /* Setting */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Setting;
+		};
 		AD1C2A57274CEAD9004B3178 /* Home */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Home;
+		};
+		AD4453D1275777E2006FCDA6 /* API */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = API;
+		};
+		AD4453D3275777E2006FCDA6 /* Detail */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Detail;
+		};
+		AD4453D5275777E2006FCDA6 /* FeatureInterfaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureInterfaces;
+		};
+		AD4453D7275777E2006FCDA6 /* FeatureProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureProvider;
+		};
+		AD4453D9275777E2006FCDA6 /* UserDefaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UserDefaults;
+		};
+		ADACDC3227575B9900213E37 /* Profile */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Profile;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

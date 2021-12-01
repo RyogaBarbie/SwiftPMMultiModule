@@ -6,9 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
+
+public let icon: Image = Image("Anpanman", bundle: .module)
 
 public class Profile {
     public init() {}
+    public let icon: Image = Image("Anpanman", bundle: .module)
     public func printClass() {
         print(String(describing: self))
     }
