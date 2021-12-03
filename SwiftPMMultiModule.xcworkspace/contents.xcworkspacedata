@@ -5,12 +5,9 @@
       location = "group:DemoApp.swiftpm">
    </FileRef>
    <FileRef
-      location = "group:Production/Production.xcodeproj">
+      location = "group:App/App.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Staging/Staging.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../SwiftPMMultiModule/Package">
+      location = "group:Package">
    </FileRef>
 </Workspace>
