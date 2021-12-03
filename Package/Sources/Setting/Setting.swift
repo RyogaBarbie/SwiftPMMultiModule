@@ -16,4 +16,5 @@ public class Setting {
     public func printClass() {
         print(String(describing: self))
     }
+    public let text: String = "Setting"
 }

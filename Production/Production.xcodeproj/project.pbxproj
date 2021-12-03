@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		AD11FC99275784C50028FD8B /* Setting in Frameworks */ = {isa = PBXBuildFile; productRef = AD11FC98275784C50028FD8B /* Setting */; };
 		AD1C2A58274CEAD9004B3178 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = AD1C2A57274CEAD9004B3178 /* Home */; };
+		AD3123F22759D3FA00C131B2 /* FeatureInterfaces in Frameworks */ = {isa = PBXBuildFile; productRef = AD3123F12759D3FA00C131B2 /* FeatureInterfaces */; };
 		AD4453D2275777E2006FCDA6 /* API in Frameworks */ = {isa = PBXBuildFile; productRef = AD4453D1275777E2006FCDA6 /* API */; };
 		AD4453D4275777E2006FCDA6 /* Detail in Frameworks */ = {isa = PBXBuildFile; productRef = AD4453D3275777E2006FCDA6 /* Detail */; };
-		AD4453D6275777E2006FCDA6 /* FeatureInterfaces in Frameworks */ = {isa = PBXBuildFile; productRef = AD4453D5275777E2006FCDA6 /* FeatureInterfaces */; };
 		AD4453D8275777E2006FCDA6 /* FeatureProvider in Frameworks */ = {isa = PBXBuildFile; productRef = AD4453D7275777E2006FCDA6 /* FeatureProvider */; };
 		AD4453DA275777E2006FCDA6 /* UserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = AD4453D9275777E2006FCDA6 /* UserDefaults */; };
 		ADACDC3327575B9900213E37 /* Profile in Frameworks */ = {isa = PBXBuildFile; productRef = ADACDC3227575B9900213E37 /* Profile */; };
@@ -49,13 +49,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD4453D4275777E2006FCDA6 /* Detail in Frameworks */,
+				AD3123F22759D3FA00C131B2 /* FeatureInterfaces in Frameworks */,
 				ADACDC3327575B9900213E37 /* Profile in Frameworks */,
 				AD4453D2275777E2006FCDA6 /* API in Frameworks */,
 				AD4453DA275777E2006FCDA6 /* UserDefaults in Frameworks */,
 				AD1C2A58274CEAD9004B3178 /* Home in Frameworks */,
 				AD11FC99275784C50028FD8B /* Setting in Frameworks */,
 				AD4453D8275777E2006FCDA6 /* FeatureProvider in Frameworks */,
-				AD4453D6275777E2006FCDA6 /* FeatureInterfaces in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,10 +136,10 @@
 				ADACDC3227575B9900213E37 /* Profile */,
 				AD4453D1275777E2006FCDA6 /* API */,
 				AD4453D3275777E2006FCDA6 /* Detail */,
-				AD4453D5275777E2006FCDA6 /* FeatureInterfaces */,
 				AD4453D7275777E2006FCDA6 /* FeatureProvider */,
 				AD4453D9275777E2006FCDA6 /* UserDefaults */,
 				AD11FC98275784C50028FD8B /* Setting */,
+				AD3123F12759D3FA00C131B2 /* FeatureInterfaces */,
 			);
 			productName = Production;
 			productReference = ADC3845727471ACC00FDC974 /* Production.app */;
@@ -409,6 +409,10 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Home;
 		};
+		AD3123F12759D3FA00C131B2 /* FeatureInterfaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureInterfaces;
+		};
 		AD4453D1275777E2006FCDA6 /* API */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = API;
@@ -416,10 +420,6 @@
 		AD4453D3275777E2006FCDA6 /* Detail */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Detail;
-		};
-		AD4453D5275777E2006FCDA6 /* FeatureInterfaces */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = FeatureInterfaces;
 		};
 		AD4453D7275777E2006FCDA6 /* FeatureProvider */ = {
 			isa = XCSwiftPackageProductDependency;
