@@ -1,3 +1,9 @@
+.PHONY: setup
+setup:
+	brew bundle
+	mint bootstrap
+	make xcodegen
+
 .PHONY: open
 open:
 	open SwiftPMMultiModule.xcworkspace
