@@ -6,13 +6,20 @@
 //
 
 import SwiftUI
+/// Package
 import API
 import Home
 import Profile
 import Setting
+/// Pods
+import Action
+import RxSwift
+import RxCocoa
+import RxRelay
 
 struct ContentView: View {
     let apiKit = APIKit.Session.shared
+    let relay: BehaviorRelay<Bool> = .init(value: true)
     var body: some View {
         Text("Hello, world!")
             .padding()

@@ -6,3 +6,5 @@ xcuserdata/
 DerivedData/
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 Brewfile.lock.json
+vendor/
+.bundle

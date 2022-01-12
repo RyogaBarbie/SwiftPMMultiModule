@@ -1,0 +1,6 @@
+framework module RxCombine {
+  umbrella header "RxCombine-umbrella.h"
+
+  export *
+  module * { export * }
+}
